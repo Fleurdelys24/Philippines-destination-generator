@@ -1,4 +1,59 @@
 body {
-  background: rgb(249, 249, 248);
+  background-image: url("https://www.travelgrove.com/blog/wp-content/uploads/2012/04/palawan.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.5;
+  color: rgb(34, 33, 33);
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
+}
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+
+form {
+  padding: 30px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  margin-bottom: 30px;
+}
+.instructions {
+  padding: 16px;
+  width: 80%;
+  font-size: 16px;
+  border-radius: 10px;
+  line-height: 20px;
+  color: rgb(24, 23, 23);
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  border: 1px solid rgba(39, 33, 66, 0.5);
+}
+.submit-button {
+  margin-left: 20px;
+  background: rgb(167, 147, 222);
+  color: black;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 22px;
+  width: 30%;
+  font-size: 16px;
+}
+.destination {
+  font-size: 20px;
+  background-color: whitesmoke;
+  padding: 20px;
+  line-height: 2;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  border-radius: 10px;
+}
+footer {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 30px;
 }

@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <title>AI Philippines Destination Generator</title>
+     <title>AI Philippines Destination Generator</title>
   </head>
   <body>
+    <div class="container">
     <header>
       <h1>AI Philippines Destination Generator</h1>
     </header>
@@ -14,12 +15,23 @@
       <form>
         <input
           type="text"
-          placeholder="Enter the island you're interested in"
+          placeholder="Enter the island you're interested in..."
+          autofocus
+          required
+          autocomplete="off"
+          class="instructions"
         />
-        <input type="submit" />
+        <input type="submit" class="submit-button" />
       </form>
+      <div class="destination">
+        Suggested places:
+        <br/>
+        Palawan
+        <br />
+        Boracay
+      </div>
     </main>
-
+    </body>
     <footer>
       This AI Project was coded by
       <a href="https://github.com/Fleurdelys24" target="_blank">
@@ -40,4 +52,5 @@
     </footer>
     <script src="src/index.js"></script>
   </body>
+</div>
 </html>
