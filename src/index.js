@@ -1,5 +1,4 @@
 function displayDestination(response) {
-  console.log("destination generated");
   new Typewriter("#destination", {
     strings: response.data.answer,
     autoStart: true,
@@ -21,10 +20,6 @@ function generateDestination(event) {
   let destinationElement = document.querySelector("#destination");
   destinationElement.classList.remove("hidden");
   destinationElement.innerHTML = `<div class="generating">🏝️Generating a travel destination in the Philippines about ${instructionsInput.value}</div>`;
-
-  console.log("Generating destination");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context:${context}`);
 
   axios.get(apiURL).then(displayDestination);
 }
