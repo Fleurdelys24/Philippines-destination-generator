@@ -13,10 +13,10 @@ function generateDestination(event) {
 
   let instructionsInput = document.querySelector("#user-instructions");
   let apiKey = "5b68e343oe324f0tc02aaba826a6efb3";
-  let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   let context =
-    "You are a travel expert.Your mission is to generate a travel destination in the Philippines.  Make sure to include the activities and interest in the destination. Include two places of interest in the destination while also following the user instructions";
+    "You are a travel expert.Your mission is to generate a travel destination in the Philippines provided by the user. Also, include two places of interest in the destination while also following the user instructions.Avoid using quotes and the word html at the beginning and &lt;/ at the end.";
   let prompt = `User instructions:Generate a Philippines destination ${instructionsInput.value}`;
+  let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   console.log("Generating destination");
   console.log(`Prompt: ${prompt}`);
