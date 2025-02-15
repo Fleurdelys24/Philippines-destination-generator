@@ -15,14 +15,23 @@ h1 {
   margin: 120px auto;
   max-width: 800px;
 }
-
-form {
-  padding: 30px;
+.form-container {
+  padding: 25px 30px;
   background-color: whitesmoke;
   border-radius: 20px;
-  display: flex;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+}
+
+.hint {
+  line-height: 1.5;
+  font-size: 14px;
+  margin-top: 20px;
+  opacity: 0.5;
 }
 .instructions {
   padding: 16px;
@@ -53,8 +62,25 @@ form {
   border-radius: 5px;
   border-left: 3px solid rgb(94, 67, 169);
 }
+.hidden {
+  display: none;
+}
 footer {
   text-align: center;
   font-size: 18px;
   margin-top: 30px;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

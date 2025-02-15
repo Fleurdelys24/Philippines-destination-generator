@@ -18,6 +18,10 @@ function generateDestination(event) {
   let prompt = `User instructions:Generate a Philippines destination ${instructionsInput.value}`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let destinationElement = document.querySelector("#destination");
+  destinationElement.classList.remove("hidden");
+  destinationElement.innerHTML = `<div class="generating">🏝️Generating a travel destination in the Philippines about ${instructionsInput.value}</div>`;
+
   console.log("Generating destination");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context:${context}`);
